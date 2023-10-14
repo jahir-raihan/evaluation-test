@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  background: #f7f7f7;
+}
+header nav {
+  width: 80%;
+  margin: auto;
+  max-width: 1500px;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo img {
+  height: 35px;
+}
+header nav .search-bar {
+  display: flex;
+  align-items: center;
+}
+header nav .search-bar input {
+  height: 40px;
+  border: 0.1px solid rgba(0, 0, 0, 0.182);
+  border-radius: 4px 0 0 4px;
+  padding: 0 1em;
+  width: 250px;
+  outline-color: rgb(9, 148, 167);
+  border-right: none;
+}
+header nav .search-bar button {
+  height: 40px;
+  border-radius: 0 2px 2px 0;
+  border: none;
+  background: rgb(9, 148, 167);
+  padding: 0 1em;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+header nav .other-button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+header nav .join-the-club {
+  cursor: pointer;
+  height: 35px;
+  border: none;
+  background: black;
+  border-radius: 22px;
+  color: white;
+  font-weight: 500;
+  padding: 0 1em;
+}
+header nav .join-the-club i {
+  color: rgb(204, 255, 0);
+}
+header nav .cart {
+  cursor: pointer;
+  padding: 0.5em;
+  background: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: -1px 0px 93px -5px rgba(0, 0, 0, 0.75);
+  opacity: 0.7;
+}
+header nav .cart i {
+  color: rgb(9, 148, 167);
+}
+header nav .cart:hover {
+  opacity: 1;
+}
+header nav .sign-in {
+  padding: 0 1em;
+  cursor: pointer;
+  height: 35px;
+  border: none;
+  background: white;
+  opacity: 0.7;
+  border-radius: 8px;
+  box-shadow: -1px 0px 93px -5px rgba(0, 0, 0, 0.75);
+}
+header nav .sign-in i {
+  margin-right: 0.3em;
+}
+header nav .sign-in:hover {
+  opacity: 1;
+}
+
+.header-2 {
+  background: rgb(18, 207, 208);
+  background: linear-gradient(90deg, rgb(18, 207, 208) 0%, rgb(9, 111, 121) 50%, rgb(0, 75, 91) 100%);
+}
+.header-2 nav .browser-category {
+  padding: 0.5em 1em;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+  font-weight: 500;
+}
+.header-2 nav .browser-category i {
+  font-weight: 600;
+}
+.header-2 nav .browser-category select {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  outline: none;
+}
+.header-2 nav .nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+.header-2 nav .nav-links ul li {
+  color: white;
+  font-size: 14px;
+}
+
+.page-navigator {
+  width: 80%;
+  margin: 1em auto;
+  max-width: 1500px;
+}
+.page-navigator a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.page-navigator a:hover {
+  opacity: 1;
+}
+.page-navigator .current {
+  opacity: 0.6;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+  width: 80%;
+  max-width: 1500px;
+  margin: auto;
+}
+.product-container .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  border-radius: 4px;
+  padding: 2em;
+}
+.product-container .image img {
+  width: 300px;
+}
+.product-container .image .share-on {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-container .image .share-on i {
+  margin: 0 0.3em;
+  font-size: 20px;
+}
+.product-container .details .book-title {
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 24px;
+}
+.product-container .details p {
+  font-size: 14px;
+  margin: 0.5em 0;
+  opacity: 0.8;
+}
+.product-container .details p button {
+  padding: 0.3em 1em;
+  border-radius: 22px;
+  border: none;
+  opacity: 0.8;
+  font-size: 12px;
+  background: rgb(210, 210, 210);
+}
+.product-container .details .author {
+  color: rgb(9, 148, 167);
+  font-weight: 500;
+}
+.product-container .details .det-block {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.product-container .details .price {
+  color: rgb(9, 148, 167);
+  font-size: 18px;
+}
+.product-container .details .price span {
+  color: gray;
+  font-size: 12px;
+}
+.product-container .details .review {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  opacity: 0.8;
+  margin: 1em 0;
+}
+.product-container .details .review .stars i {
+  color: gold;
+}
+.product-container .details .more-details {
+  width: 80%;
+  margin: 1em 0;
+}
+.product-container .details .more-details span {
+  color: rgb(18, 207, 208);
+}
+.product-container .details .cart-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+.product-container .details .cart-buttons button {
+  height: 40px;
+  border: 1px solid rgb(18, 207, 208);
+  border-radius: 2px;
+  padding: 0.5em 1.5em;
+  background: none;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.product-container .details .wish-buttons {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+.product-container .details .wish-buttons button {
+  padding: 0.3em 1em;
+  font-size: 12px;
+  opacity: 0.8;
+  border-radius: 8px;
+  background: rgba(18, 208, 208, 0.16);
+  border: 1px solid rgb(18, 207, 208);
+}
+
+.mid-nav-summary-authordet-review {
+  width: 80%;
+  max-width: 1500px;
+  margin: 5em auto;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid-nav-summary-authordet-review ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.mid-nav-summary-authordet-review ul li {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  padding-bottom: 1em;
+  opacity: 0.8;
+  transition-duration: 0.3s;
+}
+.mid-nav-summary-authordet-review ul li:hover {
+  opacity: 1;
+  border-bottom: 2px solid rgb(18, 207, 208);
+}
+.mid-nav-summary-authordet-review ul .active {
+  opacity: 1;
+  border-bottom: 2px solid rgb(18, 207, 208);
+}
+
+.note-text {
+  width: 80%;
+  max-width: 1500px;
+  margin: 3em auto;
+  opacity: 0.7;
+}
+
+.more-books-title-container {
+  width: 80%;
+  max-width: 1500px;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.223);
+}
+
+.more-book-title {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 24px;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid rgb(18, 207, 208);
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.more-books {
+  width: 80%;
+  max-width: 1500px;
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1%;
+}
+.more-books .book {
+  cursor: pointer;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  padding: 1em;
+  transition-duration: 0.3s;
+  border-radius: 4px;
+  text-align: center;
+}
+.more-books .book img {
+  width: 100%;
+}
+.more-books .book p {
+  font-weight: 500;
+}
+.more-books .book .price {
+  color: rgb(18, 207, 208);
+  font-weight: 400;
+}
+.more-books .book:hover {
+  transition-duration: 0.3s;
+  border: 0.5px solid rgba(0, 0, 0, 0.117);
+  box-shadow: -1px 1px 65px -27px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: -1px 1px 65px -27px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: -1px 1px 65px -27px rgba(0, 0, 0, 0.55);
+}
+
+footer {
+  width: 80%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 2em 0;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.223);
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-container .footer-contents .logo img {
+  height: 35px;
+}
+footer .footer-container .footer-contents p {
+  width: 70%;
+  margin: 0.5em 0;
+  opacity: 0.8;
+}
+footer .footer-container .footer-contents .title {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+footer .footer-container .footer-contents a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  margin: 0.5em 0;
+}
+footer .footer-container .footer-contents a:hover {
+  color: rgb(18, 207, 208);
+}/*# sourceMappingURL=index.css.map */
