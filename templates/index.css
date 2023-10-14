@@ -330,9 +330,13 @@ header nav .sign-in:hover {
   max-width: 1500px;
   margin: 2em auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 1%;
+}
+.more-books a {
+  text-decoration: none;
+  color: black;
 }
 .more-books .book {
   cursor: pointer;
@@ -343,7 +347,7 @@ header nav .sign-in:hover {
   text-align: center;
 }
 .more-books .book img {
-  width: 100%;
+  width: 200px;
 }
 .more-books .book p {
   font-weight: 500;
