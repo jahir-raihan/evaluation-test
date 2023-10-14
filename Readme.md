@@ -38,6 +38,7 @@ pip install django, pillow
 **Just run**
 
 ```bash
+cd backend/ecommerce_example
 python manage.py runserver
 ```
 
