@@ -4,7 +4,7 @@
 
 ###  Backend contains full website with a functional minimal backend.
 
-**Sorry I didn't get that much time to make the template responsive.** 
+**Sorry I didn't get that much time to make the template responsive and make the html and css file readable.** 
 
 
 ## Evaluation
