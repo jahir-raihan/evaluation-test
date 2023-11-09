@@ -1,4 +1,4 @@
-# Temporary evaluation Repository.
+# Evaluation Repository of a sample E-Commerce website.
 
 ### Template contains html and css files
 
